@@ -3,7 +3,7 @@ header {
     width: 100%;
     
     position: fixed;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: space-between;
 
@@ -11,18 +11,43 @@ header {
     font-size: 2.4rem;
     font-family: 'Archivo', sans-serif;
 
-    padding-top: 1.6rem;
-    padding-bottom: 1.6rem;
+    /* padding-top: 1.6rem; */
 
 
 }
 
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 100px;
+    padding-inline-end: 100px;
+    width: 100%;
+    min-width: 80%;
+    padding-top: 10px;
+}
+
+.header-container div {
+    width: auto;
+    column-gap: 300px;
+    column-fill: balance;
+    display: flex;
+
+}
+
+@media only screen and (max-width: 1400px) {
+    header{
+        position: absolute;
+    }
+}
+
 .line{
     position: absolute;
-    padding-top: 91px;
+    /* padding-top: 91px; */
     margin-left: 10%;
     width: 80%;
-    background: none;
+    height: 1px;
+    background: red;
     border-bottom: 5px solid #8CC3D1;
 
 
@@ -85,9 +110,8 @@ main {
 
     /* background-color: var(--pink); */
     background-image: url("/assets/background-socio.png");
-    background-size: auto;
-    background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 
@@ -96,6 +120,7 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 
 .container .text {
     width: 40%;
@@ -153,9 +178,9 @@ main {
 
 .grid-container{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto ;
-    /* margin-right: 10px; */
+    margin-right: 10px;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 30px;
 
@@ -237,7 +262,28 @@ main {
 
   }
 /* footer */
+.footer-container {
+    display: grid;
+    justify-content: center;
+    padding-inline-start: 100px;
+    padding-inline-end: 100px;
+    width: 100%;
+    min-width: 80%;
+    padding-top: 10px;
+}
 
+.footer-logo {
+    width: auto;
+    /* column-gap: 300px;
+    column-fill: balance; */
+    display: inline-block;
+    align-self: center;
+}
+
+.footer-container p {
+    text-align: right;
+    align-self: center;
+}
 footer {
     margin-top: 5vh;
     background-color: var(--light-blue);
