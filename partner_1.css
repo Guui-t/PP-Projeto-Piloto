@@ -14,7 +14,19 @@ header {
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
 
-    border-bottom: .5rem solid var(--light-blue);
+
+}
+
+.line{
+    position: absolute;
+    padding-top: 91px;
+    margin-left: 10%;
+    width: 80%;
+    background: none;
+    border-bottom: 5px solid #8CC3D1;
+
+
+      
 }
 
 header img {
@@ -43,9 +55,28 @@ a{
 }
 
 .logo img{
-    max-width:20rem;
-    max-height:7.8rem;
-    margin: auto;
+    position: absolute;
+    max-width: 300px;
+    max-height: auto;
+    margin-left: -150px;
+    top: 0vh;
+    left: 50%;
+
+    object-position: center;
+
+    padding: 15px;
+    background-color: white;
+
+    border-color: #8CC3D1;
+    border-style: solid;
+    border-width: 5px;
+    border-top: none;
+    
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
 }
 
 main {
@@ -80,22 +111,139 @@ main {
 }
 
 .container .description{
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.7);
     margin-bottom: 4.6rem;
 }
 
-.container .achivements{
-    background-color: var(--white);
+.achivements{
+    display: flex;
+    align-items: space-around;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    width: auto;
+    height: auto;
 }
 
+.description{
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    width: auto;
+    height: auto;
+}
 
+.description p {
+    font-size: auto;
+}
+
+.name {
+    text-align: center-left;
+    width: auto;
+    border-style: none;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 15rem
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
+    /* margin-right: 10px; */
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+
+    border-radius: 25px;
+    width: 765px;
+    height: 230px;
+    margin-top: 80px;
+}
+
+.grid-container p{
+    width: 250px;
+    height: 60px;
+    line-height: 30px;
+    font-size: 22px;
+}
+.grid-container > div {
+    /* background-color: red; */
+    text-align: start;
+    padding: 10px 10px;
+    font-size: 30px;
+}
+
+.item_text1{
+    width: 200px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item_text2{
+    width: 200px;
+    grid-column-start: 5;
+    grid-column-end: 8;
+}
+
+.item_text3{
+    width: 200px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item_text4{
+    width: 200px;
+    grid-column-start: 5;
+    grid-column-end: 8;
+}
+
+.icon1{
+    margin-left: 10px;
+}
+.icon2{
+    margin-left: 50px;
+}
+.icon3{
+    margin-left: 10px
+}
+.icon4{
+    margin-left: 50px;
+}
+
+.icon{
+    display: center;
+    
+}
+
+.icon img{
+    width: 50px;
+    display: center;
+    margin-top: 5px;
+}
+
+.achivements img{
+      width: 30px;
+      height: auto;
+  }
+
+  .container .perfil {
+      margin-top: 15rem;
+      margin-right: 5rem;
+
+  }
 /* footer */
 
 footer {
+    margin-top: 5vh;
     background-color: var(--light-blue);
     font-size: 2.4rem;
     width: 100vw;
-    height: 10vh;
+    height: 5vh;
 
     border-top: .5rem solid var(--blue);
 
@@ -107,12 +255,12 @@ footer {
 footer img {
     position: relative;
     max-width: 13.6rem;
-    max-height: 5rem;
+    max-height: 3rem;
 }
 
 footer p {
     color: var(--blue);
-    font-size: 1.4rem;
+    font-size: 1rem;
     position: absolute;
     right: 5.6rem
 }
