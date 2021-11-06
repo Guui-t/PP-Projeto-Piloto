@@ -17,6 +17,6 @@ html{
     font-size: 62.5% /* 10px */
 }
 
-body{
-    height: 100vh;
+body, html{
+    height: 100%;
 }
