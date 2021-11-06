@@ -46,8 +46,7 @@ header {
     /* padding-top: 91px; */
     margin-left: 10%;
     width: 80%;
-    height: 1px;
-    background: red;
+    height: 5\px;
     border-bottom: 5px solid #8CC3D1;
 
 
@@ -185,14 +184,14 @@ main {
     padding: 30px;
 
     border-radius: 25px;
-    width: 765px;
-    height: 230px;
+    width: 80%;
+    height: 80%;
     margin-top: 80px;
 }
 
 .grid-container p{
-    width: 250px;
-    height: 60px;
+    width: auto;
+    height: auto;
     line-height: 30px;
     font-size: 22px;
 }
@@ -200,29 +199,29 @@ main {
     /* background-color: red; */
     text-align: start;
     padding: 10px 10px;
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 .item_text1{
-    width: 200px;
+    width: 50%;
     grid-column-start: 2;
     grid-column-end: 4;
 }
 
 .item_text2{
-    width: 200px;
+    width: 50%;
     grid-column-start: 5;
     grid-column-end: 8;
 }
 
 .item_text3{
-    width: 200px;
+    width: 50%;
     grid-column-start: 2;
     grid-column-end: 4;
 }
 
 .item_text4{
-    width: 200px;
+    width: 50%;
     grid-column-start: 5;
     grid-column-end: 8;
 }
