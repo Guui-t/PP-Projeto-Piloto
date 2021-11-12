@@ -29,7 +29,7 @@
     margin-bottom: 1.2rem;
 }
 
-.landing-page .title .btn{
+.btn{
     border-radius: 2rem;
     color: var(--white);
 
@@ -109,8 +109,78 @@
     margin: 2rem;
 }
 
+.services{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
 
+.services .title {
+    margin: 9rem 12rem;
+    display: flex;
+    align-items: center;
+}
 
+.services .title h2 {
+    color: var(--blue);
+
+    font-size: 6.4rem;
+    font-weight: bold;
+    font-family: 'Archivo', sans-serif;
+}
+
+.services .title .line {
+    height: 1px;
+    width: 90%;
+
+    margin-left: 2rem;
+
+    border-radius: 5rem;
+    background-color: var(--blue);
+    border: .1rem solid var(--blue);
+}
+
+.services .services-container {
+    display: flex;
+    margin: 10.5rem;
+}
+
+.services .services-container .types {
+    background: rgba(196, 196, 196, 0.12);
+    margin: 1.5rem;
+    border-radius: .4rem;
+    padding: 3rem;
+    
+}
+
+.services .services-container .types .service-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.services .services-container .types .service-name img {
+    transform: scale(0.8, 0.8);
+}
+
+.services .services-container .types .service-name p {
+    font-size: 3.2rem;
+    font-family: 'Archivo', sans-serif;
+    color: var(--blue);
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.services .services-container .types p {
+    font-size: 1.6rem;
+    color: var(--blue);
+    margin-bottom: 4rem;
+}
+
+.services .services-container .types a {
+    font-size: 1.6rem;
+    color: var(--blue);
+}
 
 /* .container {
     display: flex;

@@ -59,7 +59,7 @@ header {
 
 }
 
-.line{
+header .line{
     position: absolute;
     /* padding-top: 91px; */
     margin-left: 10%;
