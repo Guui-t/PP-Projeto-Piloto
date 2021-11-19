@@ -8,6 +8,13 @@ form {
     max-width: 100%;
 }
 
+.menu-bars{
+    background-image: url(/assets/icons/menu_bars.png);
+    height: 10%;
+    width: 10%;
+}
+
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -79,6 +86,7 @@ form {
     width: 100%;
     height: 50%;
     background-color: var(--pink);
+    justify-content: center;
 }
 
 .branco .text {
@@ -104,7 +112,8 @@ form {
 }
 
 .rosa .awards {
-    margin: auto;
+    width: auto;
+    min-width:50%;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
@@ -116,12 +125,22 @@ form {
     color: var(--white);
 }
 
+.rosa .awards .image-container{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .rosa .awards .image-container img {
-    margin: 2rem;
-    max-width: 100%;
+    margin: 1rem;
+    width: auto;
 }
 
 .services{
+    padding-top: 50rem;
+    padding-bottom: 50rem;
     display: flex;
     width: 100vw;
     height: 100%;
@@ -203,6 +222,7 @@ form {
     align-content: space-between;
     justify-content: space-evenly;
     align-items: stretch; */
+    justify-items: stretch;
 }
 
 .services .services-container .types {
@@ -210,7 +230,7 @@ form {
     margin: 1.5rem;
     border-radius: .4rem;
     padding: 3rem;
-    width: 3;
+    max-width: 100%;
 }
 
 .services .services-container .types .service-name {
@@ -269,11 +289,10 @@ form {
 .info .images-container{
     display: flex;
     flex-direction: column;
-    max-width:30%;
-    max-height: 100%;
-    
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
+    max-width:25%;
+    height: 100%;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
     /* background-color: red; */
     flex-wrap: nowrap;
 }
@@ -505,21 +524,71 @@ form {
         font-size: 50%;
     }
 
+
+
+    .services {
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        max-height: 100vh;
+        margin-bottom: 10%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-around;
+    }
+
+    .services .services-container .types .service-name {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+
     .services .services-container {
         display: flex;
-        /* margin: 10.5rem; */
+        /* width: 100%;
+        padding-top: 20rem;
+        padding-bottom: 20rem; */
         flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: space-between;
-        justify-content: space-evenly;
-        align-items: stretch;
+        flex-wrap: wrap;
+        align-content: stretch;
         min-width: 234px;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .services .services-container .types p {
+        font-size: 1.6rem;
+        color: var(--blue);
+        margin-bottom: 2rem;
+    }
+
+    .services .services-container .types {
+        display:table;
+        background: rgba(196, 196, 196, 0.12);
+        margin: 1.5rem;
+        border-radius: .4rem;
+        padding: 2rem;
+        max-width: 100%;
+        height: 50%;
+    }
+
+    .services .services-container .types .service-name img {
+        max-width: 10%;
+        margin-bottom: 1rem;
+        margin-inline: 1rem;
     }
 
     .rosa .awards .image-container {
         display:flex;
-        /* margin: 2rem; */
-        max-width: 50%;
+        margin: 2rem;
+        max-width: 65%;
+        min-width: 50%;
         flex-direction: row;
         align-items: center;
         justify-items: center;
@@ -529,7 +598,7 @@ form {
     .rosa .awards .image-container img{
         align-self: center;
         max-width: 20%;
-        /* aspect-ratio: inherit; */
+        aspect-ratio: inherit;
     }
 
     .rosa .awards{
@@ -607,9 +676,44 @@ form {
         /* transform: translate(-15rem); */
     }
 
+
+    .subscribe-container h1 {
+        /* padding-top: 30%; */
+        font-size: 4rem;
+        font-family: 'Archivo', sans-serif;
+        color: var(--blue);
+        /* margin-left: 1rem; */
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        margin-top: 0em;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .subscribe-container p {
+        /* padding-top: 15rem; */
+        /* margin-left: 1rem; */
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        color: rgba(28, 140, 166, 1);
+    }
+
+    .news-container img {
+        max-width: 70%;
+        /* padding-top: 10px; */
+    }
+
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
     .news {
         display: flex;
         width: 100%;
@@ -647,7 +751,7 @@ form {
 
     .news-container img {
         max-width: 50%;
-        /* padding-top: 10px; */
+        padding-top: 10px;
     }
 
     .footer-container p {
@@ -661,11 +765,103 @@ form {
         flex-wrap: wrap;
     }
     
-}
+} */
 
-@media (max-width: 535px) {
+@media (max-width: 550px) {
+
+    html{
+        font-size: 30%;
+    }
+
+
+    .header-container{
+        width: 100vw;
+        height: 10rem;
+        display: flex;
+        /* grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "logo tl tr"; */
+        /* justify-content: space-around;
+        flex-direction: row;
+        align-content: center;
+        align-items: center; */
+    }
+
+    .header-container img{
+        max-width: 100%;
+        min-width: 80%;
+        border-style: none;
+    }
+
+    .header-container p {
+        display: none;
+    }
+    
+
+
+
+
+    .header-container a:hover{
+        background-color: red;
+    }
+
+
+
+    .header-container .logo{
+        height: 100%;
+        display:block;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-container .logo img{
+        /* padding-top: 1rem; */
+        position: relative;
+        width: 15rem;
+        min-width: 15rem;
+        border-radius: 0;
+    }
+
+    .rosa .awards .image-container {
+        display: flex;
+        margin: 2rem;
+        max-width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .services {
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        max-height: 100vh;
+        margin-bottom: 10%;
+
+        padding-top: 0;
+        padding-bottom: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-around;
+    }
+
+    
+
+
+
+    .services .services-container .types .service-name img {
+        max-width: 10%;
+        margin-bottom: 1rem;
+        margin-inline: 1rem;
+    }
+
     .services-header .title {
-        margin: 9rem 12rem;
+        /* margin: 9rem 12rem; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -689,6 +885,29 @@ form {
         margin: auto;
     }
 
+    
+
+    .services .services-container {
+        display: flex;
+        /* margin: 10.5rem; */
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: stretch;
+        min-width: 234px;
+        justify-content: center;
+    }
+
+    .services .services-container .types {
+        display: block;
+        background: rgba(196, 196, 196, 0.12);
+        /* margin: 1.5rem; */
+        border-radius: .4rem;
+        padding: 3rem;
+        max-width: 100%;
+        height: 20%;
+    }
+
     .content {
         display: flex;
         width: 100vw;
@@ -704,12 +923,29 @@ form {
         display: none;
     }
 
-    .info-now .content {
-        background: url(/assets/image4.png) no-repeat 50% 50%;
+    .info {
+        /* background: url(/assets/image1.png) no-repeat 50% 50%; */
         background-size: cover;
         display: flex;
         width: 100vw;
-        height: 100vh;
+        height: 70vh;
+        /* margin: auto; */
+        /* background-color: rgba(173, 216, 222, 1); */
+        padding: 10%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .info-now .content {
+        /* background: url(/assets/image4.png) no-repeat 50% 50%; */
+        background-size: cover;
+        background-blend-mode:color-burn;
+        display: flex;
+        width: 100vw;
+        height: 70vh;
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -717,17 +953,29 @@ form {
         padding: 10%;
     }
 
+    .info .images-container {
+        /* background: url(assets/image1.png); */
+        background-size: cover;
+        display: none;
+        flex-direction: column;
+        max-width: 70%;
+        max-height: 100%;
+        /* background-color: red; */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .info-now .images-container img {
-        width: auto;
+        width: 100%;
         margin: 1rem auto;
         max-width: 100%;
-        min-width: 80%;
+        /* min-width: 80%; */
         background-color: blue;
     }
 
     .subscribe-container h1 {
         /* padding-top: 30%; */
-        font-size: 3.5rem;
+        font-size: 5rem;
         font-family: 'Archivo', sans-serif;
         color: var(--blue);
         /* margin-left: 1rem; */
@@ -738,7 +986,7 @@ form {
         /* padding-top: 15rem; */
         /* margin-left: 1rem; */
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 3rem;
         font-weight: lighter;
         font-family: 'Poppins', sans-serif;
         color: rgba(28, 140, 166, 1);
@@ -793,16 +1041,18 @@ form {
         /* padding-top: 10px; */
     }
 
-    .footer-container p {
-        width: 30vh;
+    
+
+    /* .footer-container p {
+        max-width: 30%;
         display:flex;
         text-align: right;
         align-self: center;
         flex-direction: column;
-        align-items: baseline;
+        align-items: flex-end;
         justify-content: center;
         flex-wrap: wrap;
-    }
+    } */
 
 
 
