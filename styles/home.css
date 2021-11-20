@@ -120,6 +120,7 @@ form {
 }
 
 .rosa .awards .text p {
+    padding: 4;
     font-size: 2rem;
     margin: 6rem;
     color: var(--white);
@@ -521,7 +522,7 @@ form {
 
 @media (max-width: 1190px) {
     html{
-        font-size: 50%;
+        font-size: 60%;
     }
 
 
@@ -692,7 +693,7 @@ form {
         justify-content: center;
         margin-top: 0em;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
     }
 
@@ -709,6 +710,25 @@ form {
     .news-container img {
         max-width: 70%;
         /* padding-top: 10px; */
+    }
+
+    .info-now .images-container img {
+        width: auto;
+        margin: 1rem auto;
+        max-width: 100%;
+        min-width: 80%;
+        background-color: blue;
+    }
+
+    .info-now .content {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        padding: 5%;
     }
 
 }
@@ -770,7 +790,7 @@ form {
 @media (max-width: 550px) {
 
     html{
-        font-size: 30%;
+        font-size: 40%;
     }
 
 
@@ -1041,18 +1061,23 @@ form {
         /* padding-top: 10px; */
     }
 
-    
-
-    /* .footer-container p {
-        max-width: 30%;
-        display:flex;
-        text-align: right;
-        align-self: center;
-        flex-direction: column;
-        align-items: flex-end;
+    .info .info-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 10.5rem;
+        /* background-color: yellow; */
+        vertical-align: middle;
+        /* padding-inline: 10%; */
+        align-content: center;
         justify-content: center;
-        flex-wrap: wrap;
-    } */
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+
+    
 
 
 
