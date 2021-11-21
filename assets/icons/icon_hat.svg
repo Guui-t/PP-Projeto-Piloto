@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#1B8BA9;}
+</style>
+<g>
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M0,5.71C0,2.56,2.56,0,5.71,0h88.57C97.44,0,100,2.56,100,5.71v88.57c0,3.16-2.56,5.71-5.71,5.71H5.71
+				C2.56,100,0,97.44,0,94.29V5.71z"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st0">
+			<path class="st1" d="M58.83,6.78c-2.63-1.7-5.7-2.61-8.83-2.61s-6.2,0.91-8.83,2.61L0,33.33l16.67,10.75v40.98l1.22,1.22
+				c0.39,0.39,9.81,9.55,32.11,9.55s31.72-9.17,32.11-9.55l1.22-1.22V44.08l8.33-5.38v44.62H100v-50L58.83,6.78z M75,81.32
+				c-7.53,4.51-16.24,6.66-25,6.18c-8.76,0.48-17.47-1.67-25-6.18V49.46l16.17,10.42c2.63,1.71,5.7,2.62,8.83,2.62
+				c3.14,0,6.2-0.91,8.83-2.62L75,49.46V81.32z M54.32,52.88c-1.28,0.84-2.78,1.28-4.32,1.28c-1.53,0-3.03-0.44-4.32-1.28
+				L15.38,33.33l30.31-19.55c1.28-0.84,2.78-1.28,4.32-1.28c1.53,0,3.03,0.44,4.32,1.28l30.31,19.55L54.32,52.88z"/>
+		</g>
+	</g>
+</g>
+</svg>

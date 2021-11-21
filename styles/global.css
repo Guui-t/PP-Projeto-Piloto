@@ -32,7 +32,11 @@ header {
     justify-content: center;
     background-color: var(--white);
     /* font-size: 2.4rem; */
-    font-family: 'Archivo', sans-serif;
+    font-family: comfortaa , sans-serif;
+}
+
+header p{
+    font-size: 1.6rem ;
 }
 
 .nav-container{
@@ -65,12 +69,14 @@ header {
     /* margin-inline-start: 5%;
     margin-inline-end: 5%; */
     width: 30%;
-    column-gap: 50%;
+    column-gap: 25%;
     column-fill: balance;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+
 
 
 header .line{
@@ -112,7 +118,7 @@ a{
     width: 30%;
     display: flex;
     align-items: left;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* padding-inline-start: 100px; */
 }
 
@@ -124,10 +130,10 @@ a{
 }
 
 .logo{
-    width:10%;
+    width:30%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .logo img{
@@ -139,7 +145,7 @@ a{
     top: 0vh;
     /* left: 50%; */
     object-position: 50%;
-    /* padding: 15px; */
+    padding: .5rem;
     background-color: white;
     border-color: #8CC3D1;
     border-style: solid;
@@ -199,6 +205,7 @@ a{
 }
 
 .footer-container p {
+    font-size: 1rem;
     max-width: 30%;
     display:flex;
     text-align: right;
@@ -262,7 +269,6 @@ footer p {
     
 
     .header-container .logo{
-        padding-top: 1rem;
         height: 100%;
         display:block;
         align-items: center;
@@ -273,24 +279,71 @@ footer p {
 
     .header-container .logo img{
         position: relative;
-        width: 15rem;
-        min-width: 15rem;
+        top: 0;
+        width: 20%;
         border-radius: 0;
+        align-self: center;
+        display: flex;
+        background-color: transparent;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 @media (max-width: 350px){
+    
 
     .header-container{
-        width: 100%;
-        padding-inline: 3rem ;
+        padding-inline-end: .5rem;
+        padding-inline-start: .5rem;
+
+        width: 100vw;
+        height: 10rem;
+        display: flex;
+        /* grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "logo tl tr"; */
+        /* justify-content: space-around;
+        flex-direction: row;
+        align-content: center;
+        align-items: center; */
     }
-    .header-container .logo {
-        width: 55%;
-        display: block;
+
+    .header-container img{
+        max-width: 100%;
+        min-width: 80%;
+        border-style: none;
+    }
+
+    .header-container p {
+        display: none;
+    }
+    
+
+
+
+
+    .header-container a:hover{
+        background-color: red;
+    }
+
+
+
+    .header-container .logo{
+        width: 60%;
+        height: 100%;
+        display:block;
         align-items: center;
         align-content: center;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .header-container .logo img{
+        /* padding-top: 1rem; */
+        position: relative;
+        /* width: 15rem;
+        min-width: 30px; */
+        border-radius: 0;
     }
 }

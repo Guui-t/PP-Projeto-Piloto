@@ -1,17 +1,15 @@
 /* Container */
 
-*{
-    font-family: comfortaa;
-    /* color: white */
-}
 
-h1{
+body h1{
     font-size: 3.6rem;
+    font-family: comfortaa;
 }
 
-p {
+body p {
     font-size: 1.6rem ;
 }
+
 
 .container {
     display: flex;
@@ -69,6 +67,10 @@ p {
     align-content: center;
 }
 
+.info h1{
+    font-size: 2.6rem;
+}
+
 .info p{
     padding-left: 1rem ;
 }
@@ -76,24 +78,95 @@ p {
 
 
 #call{
-    color: blue;
+    color: #1B8CA9;
     padding-top: 5rem;
     align-items: center;
     justify-content: flex-start;
 }
 
 .button{
-    font-size: 250%;
+    
+    width: 30%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     margin-top: 5rem;
     padding: 1rem;
-    padding-inline: 2rem;
-    border-radius: 25px;
+    /* padding-inline: 1rem; */
+    border-radius: 40px;
     justify-self: center;
     background-color: rgba(196, 196, 196, 0.3);
+    align-items: center;
+}
+
+.button p{
+    font-family: comfortaa;
+    padding-left: 1rem ;
+    font-size: 2vw ;
+}
+
+.button img {
+    align-self: center;
+    width: 10%;
+}
+
+.button:hover {
+    background-color: rgba(88, 88, 88, 0.3);
+    cursor: pointer;
 }
 
 @media (max-width:550px){
     html{
         font-size: 50%;
+    }
+
+    .header-container{
+        width: 100vw;
+        height: 10rem;
+        display: flex;
+        /* grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "logo tl tr"; */
+        /* justify-content: space-around;
+        flex-direction: row;
+        align-content: center;
+        align-items: center; */
+    }
+
+    .header-container img{
+        max-width: 100%;
+        min-width: 80%;
+        border-style: none;
+    }
+
+    .header-container p {
+        display: none;
+    }
+    
+
+
+
+
+    .header-container a:hover{
+        background-color: red;
+    }
+
+
+
+    .header-container .logo{
+        height: 100%;
+        display:block;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-container .logo img{
+        /* padding-top: 1rem; */
+        position: relative;
+        width: 15rem;
+        min-width: 15rem;
+        border-radius: 0;
     }
 }

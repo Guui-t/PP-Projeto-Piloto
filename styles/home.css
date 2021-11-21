@@ -805,6 +805,7 @@ form {
         flex-direction: row;
         align-content: center;
         align-items: center; */
+        align-items: center;
     }
 
     .header-container img{
@@ -828,8 +829,8 @@ form {
 
 
     .header-container .logo{
-        height: 100%;
-        display:block;
+        /* height: 100%; */
+        /* display:block; */
         align-items: center;
         align-content: center;
         flex-direction: column;
@@ -838,8 +839,8 @@ form {
 
     .header-container .logo img{
         /* padding-top: 1rem; */
-        position: relative;
-        width: 15rem;
+        /* position: relative; */
+        /* width: 15rem; */
         min-width: 15rem;
         border-radius: 0;
     }
