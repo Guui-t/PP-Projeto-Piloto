@@ -448,14 +448,15 @@ form {
     align-items: center;
     vertical-align: middle;
     background-color: rgba(254, 162, 145, 1);
+    /* padding: 2rem; */
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
 }
 
 .news-container img{
-    max-width: 100%;
+    max-width: 70%;
     /* padding-top: 10px */
 }
 
@@ -709,7 +710,7 @@ form {
 
     .news-container img {
         max-width: 70%;
-        /* padding-top: 10px; */
+        padding: 0;        /* padding-top: 10px; */
     }
 
     .info-now .images-container img {
