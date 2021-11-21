@@ -11,6 +11,7 @@ body p {
 }
 
 
+
 .container {
     display: flex;
     width: 100%;
@@ -75,6 +76,10 @@ body p {
     padding-left: 1rem ;
 }
 
+.info img{
+    width: 3rem;
+}
+
 
 
 #call{
@@ -107,7 +112,7 @@ body p {
 
 .button img {
     align-self: center;
-    width: 10%;
+    max-width: 20%;
 }
 
 .button:hover {
@@ -121,6 +126,7 @@ body p {
     }
 
     .header-container{
+        
         width: 100vw;
         height: 10rem;
         display: flex;
@@ -168,5 +174,27 @@ body p {
         width: 15rem;
         min-width: 15rem;
         border-radius: 0;
+    }
+
+    #orange{
+        margin-top: 5rem ;
+    }
+
+    .button {
+        width: 30%;
+    }
+
+    .button p{
+        font-size: 100% ;
+    }
+}
+
+@media (max-width: 350px){
+    .button {
+        width: 50%;
+    }
+
+    .button p{
+        font-size: 100%;
     }
 }

@@ -103,7 +103,7 @@ align-content: center;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 25px;
     align-content: space-between;
-    justify-content: space-evenly;
+    justify-content: space-around;
     justify-items: stretch;
     align-items: flex-start;
     flex-direction: row;
