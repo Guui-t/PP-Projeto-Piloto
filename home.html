@@ -30,6 +30,7 @@
                         <a href="home.html"> 
                             <img src="assets/home-icon.svg">
                             <p>Home</p>
+                            <div class="underline active"></div>
                         </a>
                         
                     <!-- </div> -->
@@ -38,6 +39,7 @@
                         <a href="sistema.html"> 
                             <img src="assets/sistema-icon.svg">
                             <p>Sistema</p>
+                            <div class="underline"></div>
                         </a>
                     <!-- </div> -->
                 </div>
@@ -48,16 +50,53 @@
 
                 <div class="top-right">
                 <!-- <div class="socios"> -->
-                    <a href="partner_1.html">
-                    <img src="assets/socio-icon.svg">
-                    <p>Sócios</p>
+
+                    <div class="menu">
+                        <button class="menu_btn">
+                            <img src="assets/socio-icon.svg">
+                            <p>Sócios</p>
+                        </button>
+                        <div class="underline"></div>
+
+                        <div id="menu" class="menu_content">
+                            
+                            <a href="partner_1.html">
+                                <div class="menu-container">
+                                    <img id="user"src="assets/icons/icon_user.svg" alt="Leonardo Albergaria">
+                                    <p>
+                                        Leonardo Albergaria
+                                    </p>
+                                    
+                                    
+                                    
+
+                                    
+                                </div>
+                                <div class="overlay">Leonardo Albergaria</div>
+                                
+                                
+                            <a href="partner_2.html">
+                                <div class="menu-container">
+                                    <img id="user" src="assets/icons/icon_user.svg" alt="Guilherme Teixeira">
+                                    
+                                    <p>
+                                        Guilherme Teixeira
+                                    </p>
+                                    
+                                    
+                                    
+                                </div>
+                                <div class="overlay"> Guilherme Teixeira</div>
+                                
+                            </a>
+
+                        </div>
+                    </div>
                     
-                <!-- </div> -->
-        
-                <!-- <div class="contato"></div> -->
                     <a href="contact.html"> 
                         <img src="assets/contato-icon.svg">
                         <p>Contato</p>
+                        <div class="underline"></div>
                     </a>
 
                     
@@ -74,8 +113,9 @@
 
         
                 
-    </header>   
-
+    </header>
+    
+   
     <main>
         <!-- <div class="menu">
             <div class="menu-block">
@@ -90,7 +130,7 @@
             <div class="landing-page">
                 <div class="title">
                     <h1>Soluções em investimentos.</h1>
-                    <a class="btn" href="">continuar</a>
+                    <a class="button " href="" id="headerbtn"><span>continuar</span></a>
                 </div>
             </div>
         </div>
@@ -130,7 +170,7 @@
                         <h1>Cursos</h1>
                     </div>
                     <p>Cursos oferecidos por grandes profissionais com anos de experiência na área de investimentos.</p>
-                    <a class="btn" href="">Conheça <img src="" alt=""></a>
+                    <a class="button" href=""><span>Conheça</span> <img src="" alt=""></a>
                     
                 </div>
                 <div class="types">
@@ -140,7 +180,7 @@
                             investimentos</h1>
                     </div>
                     <p>Através de sua carteira de investimentos podemos traçar o seu perfil para oferecer os melhores investimentos.</p>
-                    <a class="btn" href="">Conheça <img src="" alt=""></a>
+                    <a class="button" href=""><span>Conheça</span> <img src="" alt=""></a>
                 </div>
                 <div class="types">
                     <div class="service-name">
@@ -148,7 +188,7 @@
                         <h1>Newsletter</h1>
                     </div>
                     <p>Nossa newsletter diária oferece as notícias mais relevantes em primeira mão.</p>
-                    <a class="btn" href="">Conheça <img src="" alt=""></a>
+                    <a class="button" href=""><span>Conheça</span> <img src="" alt=""></a>
                 </div>
             </div>
         </div>
@@ -195,7 +235,7 @@
             
             <div class="subscribe-container">
                 <h1>INSCREVA-SE</h1>
-                <p>A maior newsletter de insvestimentos do país</p>
+                <p>A maior newsletter de investimentos do país</p>
                 <div class="email-container">
                     <form action="/contact.html">
                       <input type="text" placeholder="Seu E-mail" name="search">

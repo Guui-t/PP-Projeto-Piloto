@@ -122,59 +122,9 @@ body p {
 
 @media (max-width:550px){
     html{
-        font-size: 50%;
+        font-size: 40%;
     }
 
-    .header-container{
-        
-        width: 100vw;
-        height: 10rem;
-        display: flex;
-        /* grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "logo tl tr"; */
-        /* justify-content: space-around;
-        flex-direction: row;
-        align-content: center;
-        align-items: center; */
-    }
-
-    .header-container img{
-        max-width: 100%;
-        min-width: 80%;
-        border-style: none;
-    }
-
-    .header-container p {
-        display: none;
-    }
-    
-
-
-
-
-    .header-container a:hover{
-        background-color: red;
-    }
-
-
-
-    .header-container .logo{
-        height: 100%;
-        display:block;
-        align-items: center;
-        align-content: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .header-container .logo img{
-        /* padding-top: 1rem; */
-        position: relative;
-        width: 15rem;
-        min-width: 15rem;
-        border-radius: 0;
-    }
 
     #orange{
         margin-top: 5rem ;
