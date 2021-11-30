@@ -2,7 +2,7 @@
 
 Registro com todas as mudanças realizadas
 
-## [1.1.0] - 2021-11-30
+## [1.1.0](https://github.com/Guui-t/PP-Projeto-Piloto/releases/tag/v1.1.0) - 2021-11-30
 
 - Modificado o footer para que ele utilize o logo em svg ao invés de png.
 - Ajustada o tamanho da logo do footer para que a mesma fique maior e melhor legível.
@@ -17,6 +17,6 @@ Registro com todas as mudanças realizadas
 - Corrigido um bug em que as informações de alguns botões ficavam acima do header da página ao rolar a página.
 
 
-## [1.0.0] - 2021-11-22
+## [1.0.0](https://github.com/Guui-t/PP-Projeto-Piloto/releases/tag/v1.0.0) - 2021-11-22
 
 - Liberação da versão estável do site. 
