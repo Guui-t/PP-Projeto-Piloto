@@ -8,6 +8,10 @@ form {
     max-width: 100%;
 }
 
+h1 {
+    font-family: comfortaa;
+}
+
 .menu-bars{
     background-image: url(/assets/icons/menu_bars.png);
     height: 10%;
@@ -38,7 +42,7 @@ form {
 }
 
 .landing-page .title h1{
-    font-family: 'Archivo',sans-serif;
+    /* font-family: 'Archivo',sans-serif; */
     color: var(--white);
     font-size: 6rem;
     margin-bottom: 1.2rem;
@@ -165,7 +169,7 @@ form {
 .branco .text h1{
     font-size: 8rem;
     font-weight: bold;
-    font-family: 'Archivo', sans-serif;
+    /* font-family: 'Archivo', sans-serif; */
 }
 
 .branco .text h4{
@@ -175,15 +179,19 @@ form {
 }
 
 .rosa .awards {
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    overflow: auto;
+    max-width: 100%;
     min-width:50%;
     text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-}
 
+}
 .rosa .awards .text p {
-    padding: 4;
+
+    padding: 1rem;
     font-size: 2rem;
     margin: 6rem;
     color: var(--white);
@@ -226,7 +234,7 @@ form {
 }
 
 .services .title h2 {
-    color: var(--blue);
+    color: var(--dark-blue);
 
     font-size: 6.4rem;
     font-weight: bold;
@@ -258,11 +266,11 @@ form {
 }
 
 .services-header .title h2 {
-    color: var(--blue);
+    color: var(--dark-blue);
 
     font-size: 6.4rem;
     font-weight: bold;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'comfortaa', sans-serif;
 }
 
 .services-header .title .line {
@@ -344,8 +352,10 @@ form {
 
 .info{
     display:flex;
+    overflow: auto;
     width: 100vw;
     height: 100vh;
+    min-height: 60rem;
     /* margin: auto; */
     background-color: rgba(173, 216, 222, 1);
     padding: 10%;
@@ -361,17 +371,18 @@ form {
     padding-bottom: 10px;
     /* background-color: red; */
     flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .info .images-container img{
     width: auto;
     margin: 1rem auto;
     max-width: 80%;
-    min-width: 50%;
+    min-width: 1rem;
     /* background-color: blue; */
     border-style: solid;
-    border-color: white;
-    border-width: 1em;
+    border-color: rgb(102, 102, 102);
+    /* border-width: 100%; */
     border-radius: 3rem;
 }
 
@@ -392,8 +403,8 @@ form {
 
 .info .info-container h1{
     font-size: 5rem;
-    font-family: 'Archivo', sans-serif;
-    color: var(--blue);
+    /* font-family: 'Archivo', sans-serif; */
+    color: var(--dark-blue);
     /* margin-left: 1rem; */
     /* text-align: center; */
 }
@@ -452,8 +463,9 @@ form {
 
 .info-now .images-container img{
     width: auto;
+    max-height: 80vh;
     margin: 1rem auto;
-    max-width: 80%;
+    max-width: 100%;
     background-color: blue;
     border-radius: 3rem;
 }
@@ -475,8 +487,8 @@ form {
 .info-now .info-container h1{
     width: 100%;
     font-size: 5rem;
-    font-family: 'Archivo', sans-serif;
-    color: var(--blue);
+    /* font-family: 'Archivo', sans-serif; */
+    color: var(--dark-blue);
     /* margin-left: 1rem; */
     text-align: left;
 }
@@ -524,7 +536,8 @@ form {
 }
 
 .news-container img{
-    max-width: 70%;
+    max-width: 70vh;
+    padding-inline: 5rem;
     
     /* padding-top: 10px */
 }
@@ -545,8 +558,9 @@ form {
 .subscribe-container h1{
     /* padding-top: 30%; */
     font-size: 7rem;
-    font-family: 'Archivo', sans-serif;
-    color: var(--blue);
+    font-weight: bold;
+    font-family: 'comfortaa', sans-serif;
+    color: var(--dark-blue);
     /* margin-left: 1rem; */
     text-align: center;
 }
@@ -762,8 +776,8 @@ form {
     .subscribe-container h1 {
         /* padding-top: 30%; */
         font-size: 4rem;
-        font-family: 'Archivo', sans-serif;
-        color: var(--blue);
+        /* font-family: 'Archivo', sans-serif; */
+        color: var(--dark-blue);
         /* margin-left: 1rem; */
         text-align: center;
     }
@@ -1027,8 +1041,8 @@ form {
     .subscribe-container h1 {
         /* padding-top: 30%; */
         font-size: 5rem;
-        font-family: 'Archivo', sans-serif;
-        color: var(--blue);
+        /* font-family: 'Archivo', sans-serif; */
+        color: var(--dark-blue);
         /* margin-left: 1rem; */
         text-align: center;
     }

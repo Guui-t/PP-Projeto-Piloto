@@ -83,7 +83,7 @@ body p {
 
 
 #call{
-    color: #1B8CA9;
+    color: rgb(91, 91, 107);
     padding-top: 5rem;
     align-items: center;
     justify-content: flex-start;
@@ -108,6 +108,8 @@ body p {
     font-family: comfortaa;
     padding-left: 1rem ;
     font-size: 2vw ;
+    font-weight: bold;
+    color: #1b6db9;
 }
 
 .button img {
